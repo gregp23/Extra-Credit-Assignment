@@ -12,12 +12,15 @@ import java.awt.Dimension;
 class Main extends JFrame {
    
   public static void main(String[] args) throws Exception {
-      
-    HashMap <Integer, String> pokedex = new HashMap<>();//PokeDex HashMap
+   
+     //PokeDex HashMap
+    HashMap <Integer, String> pokedex = new HashMap<>();/
     
-   //Text(File Object) & Photo(Array) 
+   //Text file that stores akk the Pokemon names
   File file = new File("/Users/greg/NetBeansProjects/Main/pokemon.txt");
   Scanner scanner = new Scanner(file);
+     
+   //Array to store photos of the Pokemon 
   String[] icon = {"/Users/greg/NetBeansProjects/Main/pokeball.jpg",
       "/Users/greg/NetBeansProjects/Main/bulbasaur.jpg",
     "/Users/greg/NetBeansProjects/Main/ivy.jpg",
